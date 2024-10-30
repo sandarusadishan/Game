@@ -4,26 +4,19 @@
     <meta charset="utf-8" />
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
-
   <body>
-    <h1>Guess The Number</h1>
-    <p>Guess a number between 1 to 10 :</p>
+    <div class="container">
+      <h1>Guess The Number</h1>
+      <p>Guess a number between 1 to 10:</p>
+      
+      <div class="form">
+        <input type="text" id="guessField" class="guessField" />
+        <input type="submit" value="Submit Guess" class="guessSubmit" id="submitguess" />
+      </div>
 
-    <div class="form">
-      <input type="text" id="guessField" class="guessField" />
-
-      <input
-        type="submit"
-        value="Submit guess"
-        class="guessSubmit"
-        id="submitguess"
-      />
+      <h3 class="message" id="message"></h3>
     </div>
-    <h3>Chance left:</h3>
-    <h3>Game over ! The correct number was 6.</h3>
     <script src="app.js"></script>
-    
   </body>
 </html>

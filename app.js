@@ -12,15 +12,12 @@ document.getElementById("submitguess").onclick = function () {
     );
   } else if (attempts >= 3) {
     alert(
-      "SORRY! You have used all 3 attempts. The correct number was " + y + "."
-    );
+      "SORRY! You have used all 3 attempts. The correct number was " + y + ".");
   } else if (x > y) {
     alert(
-      " SORRY! TRY A SMALLER NUMBER. Attempts left: " + (3 - attempts)
-    );
+      " SORRY! TRY A SMALLER NUMBER. Attempts left: " + (3 - attempts));
   } else {
     alert(
-      " SORRY! TRY A GREATER NUMBER. Attempts left: " + (3 - attempts)
-    );
+      " SORRY! TRY A GREATER NUMBER. Attempts left: " + (3 - attempts));
   }
 };

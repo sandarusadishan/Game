@@ -1,7 +1,109 @@
-body {
-  font-family: sans-serif;
-  width: 50%;
-  max-width: 800px;
-  min-width: 480px;
-  margin: 0 auto;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 1rem;
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 2px solid #007acc;
+}
+
+/* Header and Description Text */
+h1 {
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #666666;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.guessField {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 2px solid #007acc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guessField:focus {
+  border-color: #005ea8;
+  box-shadow: 0 0 8px rgba(0, 90, 190, 0.4);
+  outline: none;
+}
+
+/* Submit Button Styling */
+.guessSubmit {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007acc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.guessSubmit:hover {
+  background-color: #005ea8;
+  transform: translateY(-2px);
+}
+
+.guessSubmit:active {
+  transform: translateY(0);
+}
+
+/* Message Display Styling */
+.message {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+   
