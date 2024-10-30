@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Number Guessing Game</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Guess The Number</h1>
+    <p>Guess a number between 1 to 10 :</p>
+
+    <div class="form">
+      <input type="text" id="guessField" class="guessField" />
+
+      <input
+        type="submit"
+        value="Submit guess"
+        class="guessSubmit"
+        id="submitguess"
+      />
+    </div>
+    <h3>Chance left:</h3>
+    <h3>Game over ! The correct number was 6.</h3>
+
+    <script>
+
+
+      let y = Math.floor(Math.random() * 10 + 1);
+
+      let attempts = 0;
+
+      document.getElementById("submitguess").onclick = function () {
+        let x = document.getElementById("guessField").value;
+        attempts++;
+
+        if (x == y) {
+          alert(
+            "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " +
+              attempts +
+              " ATTEMPT(S)!"
+          );
+        } else if (attempts >= 3) {
+          alert(
+            "SORRY! You've used all 3 attempts. The correct number was " +
+              y +
+              "."
+          );
+        } else if (x > y) {
+          alert(
+            "OOPS SORRY!! TRY A SMALLER NUMBER. Attempts left: " +
+              (3 - attempts)
+          );
+        } else {
+          alert(
+            "OOPS SORRY!! TRY A GREATER NUMBER. Attempts left: " +
+              (3 - attempts)
+          );
+        }
+      };
+    </script>
+  </body>
+</html>
