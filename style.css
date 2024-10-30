@@ -1,11 +1,11 @@
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -16,7 +16,7 @@ body {
   padding: 1rem;
 }
 
-/* Container Styling */
+
 .container {
   text-align: center;
   padding: 2rem;
@@ -28,7 +28,7 @@ body {
   border: 2px solid #007acc;
 }
 
-/* Header and Description Text */
+
 h1 {
   color: #333333;
   font-size: 2rem;
@@ -41,7 +41,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* Form Styling */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ p {
   outline: none;
 }
 
-/* Submit Button Styling */
+
 .guessSubmit {
   width: 100%;
   padding: 0.8rem;
@@ -88,14 +88,14 @@ p {
   transform: translateY(0);
 }
 
-/* Message Display Styling */
+
 .message {
   margin-top: 1.5rem;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-/* Responsive Design */
+
 @media (max-width: 500px) {
   .container {
     padding: 1.5rem;
