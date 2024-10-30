@@ -8,7 +8,7 @@ document.getElementById("submitguess").onclick = function () {
 
   if (x == y) {
     alert(
-      "CONGRATULATIONS!YOU GUESSED IT RIGHT IN " + attempts + " ATTEMPT(S)"
+      "CONGRATULATIONS ! YOU GUESSED IT RIGHT IN " + attempts + " ATTEMPT(S)"
     );
   } else if (attempts >= 3) {
     alert(
